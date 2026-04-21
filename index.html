@@ -1,0 +1,1431 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MindBloom — Mental Health Education</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ── Floating background mascots ── -->
+    <div class="bg-deco tl">
+      <svg
+        width="200"
+        height="200"
+        viewBox="0 0 200 200"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <!-- Sleepy cloud mascot -->
+        <ellipse cx="100" cy="120" rx="70" ry="50" fill="#7BAB8B" />
+        <ellipse cx="60" cy="100" rx="40" ry="35" fill="#7BAB8B" />
+        <ellipse cx="145" cy="105" rx="38" ry="32" fill="#7BAB8B" />
+        <ellipse cx="100" cy="90" rx="50" ry="40" fill="#7BAB8B" />
+        <!-- eyes -->
+        <path
+          d="M80 90 Q85 85 90 90"
+          stroke="white"
+          stroke-width="3"
+          stroke-linecap="round"
+          fill="none"
+        />
+        <path
+          d="M110 90 Q115 85 120 90"
+          stroke="white"
+          stroke-width="3"
+          stroke-linecap="round"
+          fill="none"
+        />
+        <!-- smile -->
+        <path
+          d="M90 105 Q100 112 110 105"
+          stroke="white"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          fill="none"
+        />
+        <!-- zzz -->
+        <text
+          x="148"
+          y="72"
+          fill="#7BAB8B"
+          font-size="16"
+          font-weight="bold"
+          font-family="serif"
+          opacity="0.6"
+        >
+          z
+        </text>
+        <text
+          x="158"
+          y="58"
+          fill="#7BAB8B"
+          font-size="20"
+          font-weight="bold"
+          font-family="serif"
+          opacity="0.5"
+        >
+          z
+        </text>
+        <text
+          x="170"
+          y="42"
+          fill="#7BAB8B"
+          font-size="24"
+          font-weight="bold"
+          font-family="serif"
+          opacity="0.4"
+        >
+          z
+        </text>
+      </svg>
+    </div>
+
+    <div class="bg-deco tr">
+      <svg
+        width="180"
+        height="180"
+        viewBox="0 0 180 180"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <!-- Star/sun mascot -->
+        <g transform="translate(90,90)">
+          <circle r="38" fill="#F5C842" />
+          <ellipse
+            cx="0"
+            cy="-52"
+            rx="10"
+            ry="18"
+            fill="#F5C842"
+            transform="rotate(0)"
+          />
+          <ellipse
+            cx="0"
+            cy="-52"
+            rx="10"
+            ry="18"
+            fill="#F5C842"
+            transform="rotate(45)"
+          />
+          <ellipse
+            cx="0"
+            cy="-52"
+            rx="10"
+            ry="18"
+            fill="#F5C842"
+            transform="rotate(90)"
+          />
+          <ellipse
+            cx="0"
+            cy="-52"
+            rx="10"
+            ry="18"
+            fill="#F5C842"
+            transform="rotate(135)"
+          />
+          <ellipse
+            cx="0"
+            cy="-52"
+            rx="10"
+            ry="18"
+            fill="#F5C842"
+            transform="rotate(180)"
+          />
+          <ellipse
+            cx="0"
+            cy="-52"
+            rx="10"
+            ry="18"
+            fill="#F5C842"
+            transform="rotate(225)"
+          />
+          <ellipse
+            cx="0"
+            cy="-52"
+            rx="10"
+            ry="18"
+            fill="#F5C842"
+            transform="rotate(270)"
+          />
+          <ellipse
+            cx="0"
+            cy="-52"
+            rx="10"
+            ry="18"
+            fill="#F5C842"
+            transform="rotate(315)"
+          />
+          <circle r="32" fill="#F5C842" />
+          <!-- face -->
+          <circle cx="-11" cy="-5" r="4" fill="#E8A820" />
+          <circle cx="11" cy="-5" r="4" fill="#E8A820" />
+          <path
+            d="M-10 8 Q0 16 10 8"
+            stroke="#E8A820"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            fill="none"
+          />
+        </g>
+      </svg>
+    </div>
+
+    <div class="bg-deco bl">
+      <svg
+        width="190"
+        height="190"
+        viewBox="0 0 190 190"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <!-- Heart plant mascot -->
+        <rect x="80" y="120" width="30" height="45" rx="8" fill="#9B8EC4" />
+        <path
+          d="M95 115 C95 80 55 60 55 90 C55 110 95 115 95 115 Z"
+          fill="#7BAB8B"
+        />
+        <path
+          d="M95 115 C95 75 140 55 138 88 C136 108 95 115 95 115 Z"
+          fill="#5D9075"
+        />
+        <!-- pot -->
+        <ellipse cx="95" cy="168" rx="28" ry="10" fill="#B09FD4" />
+        <!-- heart -->
+        <path
+          d="M85 45 C85 38 95 32 95 40 C95 32 105 38 105 45 C105 55 95 62 95 62 C95 62 85 55 85 45Z"
+          fill="#F5A882"
+        />
+        <!-- face on leaf -->
+        <circle cx="75" cy="90" r="3" fill="white" />
+        <circle cx="88" cy="84" r="3" fill="white" />
+      </svg>
+    </div>
+
+    <div class="bg-deco br">
+      <svg
+        width="170"
+        height="170"
+        viewBox="0 0 170 170"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <!-- Rainbow arc mascot -->
+        <path
+          d="M20 130 Q85 20 150 130"
+          stroke="#F5A882"
+          stroke-width="12"
+          fill="none"
+          stroke-linecap="round"
+        />
+        <path
+          d="M30 130 Q85 38 140 130"
+          stroke="#F5C842"
+          stroke-width="12"
+          fill="none"
+          stroke-linecap="round"
+        />
+        <path
+          d="M40 130 Q85 56 130 130"
+          stroke="#9B8EC4"
+          stroke-width="12"
+          fill="none"
+          stroke-linecap="round"
+        />
+        <path
+          d="M50 130 Q85 70 120 130"
+          stroke="#72B4D4"
+          stroke-width="12"
+          fill="none"
+          stroke-linecap="round"
+        />
+        <!-- clouds at ends -->
+        <ellipse cx="25" cy="132" rx="18" ry="12" fill="white" opacity="0.9" />
+        <ellipse cx="145" cy="132" rx="18" ry="12" fill="white" opacity="0.9" />
+        <!-- small star -->
+        <circle cx="85" cy="150" r="8" fill="#F5C842" />
+        <path
+          d="M85 142 L87 148 L93 148 L88 152 L90 158 L85 154 L80 158 L82 152 L77 148 L83 148 Z"
+          fill="white"
+          opacity="0.6"
+        />
+      </svg>
+    </div>
+
+    <div class="bg-deco mid-l">
+      <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+        <!-- tiny butterfly -->
+        <ellipse
+          cx="40"
+          cy="50"
+          rx="28"
+          ry="22"
+          fill="#9B8EC4"
+          transform="rotate(-20 40 50)"
+        />
+        <ellipse
+          cx="80"
+          cy="50"
+          rx="28"
+          ry="22"
+          fill="#B8AEDE"
+          transform="rotate(20 80 50)"
+        />
+        <ellipse
+          cx="42"
+          cy="75"
+          rx="18"
+          ry="14"
+          fill="#7B6EC0"
+          transform="rotate(10 42 75)"
+        />
+        <ellipse
+          cx="78"
+          cy="75"
+          rx="18"
+          ry="14"
+          fill="#9B8EC4"
+          transform="rotate(-10 78 75)"
+        />
+        <rect x="57" y="38" width="6" height="46" rx="3" fill="#5A4A80" />
+        <circle cx="57" cy="35" r="5" fill="#3D3060" />
+        <line
+          x1="50"
+          y1="32"
+          x2="42"
+          y2="22"
+          stroke="#5A4A80"
+          stroke-width="2"
+        />
+        <line
+          x1="64"
+          y1="32"
+          x2="72"
+          y2="22"
+          stroke="#5A4A80"
+          stroke-width="2"
+        />
+        <circle cx="42" cy="21" r="3" fill="#F5C842" />
+        <circle cx="72" cy="21" r="3" fill="#F5C842" />
+      </svg>
+    </div>
+
+    <div class="bg-deco mid-r">
+      <svg width="140" height="140" viewBox="0 0 140 140" fill="none">
+        <!-- sparkle cluster -->
+        <path
+          d="M70 20 L74 40 L90 36 L76 48 L82 68 L70 56 L58 68 L64 48 L50 36 L66 40 Z"
+          fill="#F5C842"
+        />
+        <path
+          d="M30 60 L32 70 L42 68 L34 76 L36 86 L30 78 L24 86 L26 76 L18 68 L28 70 Z"
+          fill="#F5A882"
+          opacity="0.7"
+        />
+        <path
+          d="M104 80 L106 88 L114 86 L108 92 L110 100 L104 94 L98 100 L100 92 L94 86 L102 88 Z"
+          fill="#72B4D4"
+          opacity="0.7"
+        />
+        <circle cx="20" cy="110" r="6" fill="#9B8EC4" opacity="0.5" />
+        <circle cx="118" cy="40" r="5" fill="#7BAB8B" opacity="0.5" />
+      </svg>
+    </div>
+
+    <!-- ── Nav ── -->
+    <nav>
+      <div class="nav-logo">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <circle cx="14" cy="14" r="13" fill="#7BAB8B" />
+          <path
+            d="M14 7 C14 7 9 11 9 16 C9 20 11 22 14 22 C17 22 19 20 19 16 C19 11 14 7 14 7Z"
+            fill="white"
+            opacity="0.9"
+          />
+          <circle cx="14" cy="17" r="3" fill="#7BAB8B" />
+        </svg>
+        Mind<span>Bloom</span>
+      </div>
+      <div class="nav-links">
+        <a href="#what">What is MH?</a>
+        <a href="#conditions">Conditions</a>
+        <a href="#cope">Coping</a>
+        <a href="#myths">Myths</a>
+        <a href="#help">Get Help</a>
+      </div>
+      <button class="nav-btn">Crisis Line</button>
+    </nav>
+
+    <!-- ── Hero ── -->
+    <div class="hero">
+      <div class="hero-floaties">
+        <svg
+          class="floatie"
+          style="left: 6%; top: 15%"
+          width="60"
+          height="60"
+          viewBox="0 0 60 60"
+          fill="none"
+        >
+          <circle cx="30" cy="30" r="24" fill="#C8E6D0" />
+          <circle cx="22" cy="26" r="4" fill="#7BAB8B" />
+          <circle cx="38" cy="26" r="4" fill="#7BAB8B" />
+          <path
+            d="M22 38 Q30 44 38 38"
+            stroke="#7BAB8B"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            fill="none"
+          />
+        </svg>
+        <svg
+          class="floatie"
+          style="right: 8%; top: 20%"
+          width="50"
+          height="50"
+          viewBox="0 0 50 50"
+          fill="none"
+        >
+          <path
+            d="M25 5 C25 5 18 12 18 22 C18 30 21 34 25 34 C29 34 32 30 32 22 C32 12 25 5 25 5Z"
+            fill="#FDDDD1"
+          />
+          <circle cx="21" cy="20" r="2.5" fill="#F5A882" />
+          <circle cx="29" cy="20" r="2.5" fill="#F5A882" />
+          <path
+            d="M21 26 Q25 29 29 26"
+            stroke="#F5A882"
+            stroke-width="2"
+            stroke-linecap="round"
+            fill="none"
+          />
+        </svg>
+        <svg
+          class="floatie"
+          style="left: 15%; bottom: 25%"
+          width="45"
+          height="45"
+          viewBox="0 0 45 45"
+          fill="none"
+        >
+          <rect x="8" y="8" width="29" height="29" rx="8" fill="#D8D1EF" />
+          <circle cx="17" cy="20" r="3" fill="#9B8EC4" />
+          <circle cx="28" cy="20" r="3" fill="#9B8EC4" />
+          <path
+            d="M17 28 Q22.5 33 28 28"
+            stroke="#9B8EC4"
+            stroke-width="2"
+            stroke-linecap="round"
+            fill="none"
+          />
+        </svg>
+        <svg
+          class="floatie"
+          style="right: 18%; bottom: 30%"
+          width="55"
+          height="55"
+          viewBox="0 0 55 55"
+          fill="none"
+        >
+          <polygon
+            points="27.5,5 33,20 49,20 36,30 41,46 27.5,36 14,46 19,30 6,20 22,20"
+            fill="#FBE79B"
+          />
+          <circle cx="23" cy="27" r="3" fill="#E8A820" />
+          <circle cx="33" cy="27" r="3" fill="#E8A820" />
+          <path
+            d="M21 35 Q27.5 40 34 35"
+            stroke="#E8A820"
+            stroke-width="2"
+            stroke-linecap="round"
+            fill="none"
+          />
+        </svg>
+        <svg
+          class="floatie"
+          style="left: 42%; top: 8%"
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+        >
+          <ellipse cx="20" cy="20" rx="16" ry="12" fill="#CADFEE" />
+          <circle cx="14" cy="17" r="3" fill="#72B4D4" />
+          <circle cx="26" cy="17" r="3" fill="#72B4D4" />
+          <path
+            d="M14 24 Q20 28 26 24"
+            stroke="#72B4D4"
+            stroke-width="2"
+            stroke-linecap="round"
+            fill="none"
+          />
+        </svg>
+        <svg
+          class="floatie"
+          style="right: 38%; bottom: 18%"
+          width="36"
+          height="36"
+          viewBox="0 0 36 36"
+          fill="none"
+        >
+          <path
+            d="M18 4 C18 4 8 10 8 20 C8 28 12 32 18 32 C24 32 28 28 28 20 C28 10 18 4 18 4Z"
+            fill="#C8E6D0"
+          />
+          <circle cx="15" cy="19" r="2" fill="#7BAB8B" />
+          <circle cx="21" cy="19" r="2" fill="#7BAB8B" />
+        </svg>
+      </div>
+
+      <div class="hero-content reveal">
+        <div class="hero-badge">🌱 Free Mental Health Education</div>
+        <h1>Your mind<br />deserves <em>to bloom</em></h1>
+        <p>
+          Learn, understand, and grow. MindBloom brings you clear, compassionate
+          education on mental health — no jargon, no judgment.
+        </p>
+        <div class="hero-btns">
+          <a href="#what" class="btn-primary">Start Learning</a>
+          <a href="#help" class="btn-outline">Find Support</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Stats ── -->
+    <div class="stats-strip">
+      <div class="stat">
+        <span class="stat-num">1 in 5</span>
+        <span class="stat-label">adults experience mental illness yearly</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">50%</span>
+        <span class="stat-label">of all mental illness begins by age 14</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">75%</span>
+        <span class="stat-label">of people receive no treatment</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">Recovery</span>
+        <span class="stat-label">is possible with the right support</span>
+      </div>
+    </div>
+
+    <!-- ── What is Mental Health ── -->
+    <section id="what">
+      <div class="reveal">
+        <div class="section-tag sage">The basics</div>
+        <h2>What is mental health?</h2>
+        <p class="section-intro">
+          Mental health includes our emotional, psychological, and social
+          well-being. It affects how we think, feel, and act — and it's just as
+          important as physical health.
+        </p>
+      </div>
+      <div class="pillars reveal">
+        <div class="pillar-card">
+          <div class="pillar-icon sage">🧠</div>
+          <h3>Emotional well-being</h3>
+          <p>
+            The ability to understand and manage your feelings, cope with life's
+            challenges, and bounce back from setbacks. Emotional health is about
+            balance, not constant happiness.
+          </p>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon peach">🤝</div>
+          <h3>Social well-being</h3>
+          <p>
+            Building and maintaining meaningful relationships, feeling connected
+            to your community, and contributing positively to the world around
+            you.
+          </p>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon lavender">💭</div>
+          <h3>Psychological well-being</h3>
+          <p>
+            Having a sense of purpose, the ability to think clearly, learn new
+            things, and make informed decisions. It's about growth, not
+            perfection.
+          </p>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon sky">🌿</div>
+          <h3>It's a spectrum</h3>
+          <p>
+            Mental health exists on a continuum. Everyone has mental health, and
+            it can change day to day. Struggling doesn't mean you're "mentally
+            ill" — it means you're human.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon" style="background: #f5a882">🪞</div>
+          <h3>Self-perception</h3>
+          <p>
+            How you see and value yourself, including self-esteem and confidence. 
+            A healthy self-view supports growth and resilience.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon" style="background: #7bab8b">⚖️</div>
+          <h3>Balance and resilience</h3>
+          <p>
+            The ability to maintain stability and adapt in the face of stress,
+            adversity, or trauma. Resilience is a key component of mental health.
+          </p>
+      </div>
+
+      <div class="pillar-card"> 
+        <div class="pillar-icon" style="background: #fbe79b">🌈</div>
+        <h3>Holistic well-being</h3>
+        <p>
+          Mental health is interconnected with physical health, lifestyle, and
+          environment. Taking care of your body, nurturing relationships, and
+          creating a supportive environment all contribute to mental well-being.
+        </p>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon" style="background: #c89040">🌍</div>
+        <h3>Societal impact</h3>
+        <p>
+          Mental health isn't just an individual issue — it's a societal one. Stigma, discrimination, 
+          and lack of access to care affect communities and perpetuate cycles of suffering. 
+          Promoting mental health benefits everyone.
+        </p>
+        </div>
+
+        <div class="pillar-card">
+        <div class="pillar-icon" style="background: #7b6ec0">🔄</div>
+        <h3>Dynamic and evolving</h3>
+        <p>
+          Our understanding of mental health is constantly evolving. What we know today is just the beginning — 
+          ongoing research continues to shed light on the complexities of the mind and how to support it.
+        </p>
+
+
+      </div>
+      <div class="reveal">
+        <h2>Why it matters</h2>
+        <p>
+          Good mental health is the foundation for a fulfilling life. It allows
+          us to build strong relationships, perform at our best, and navigate
+          life's ups and downs with grace. Prioritizing mental health isn't a
+          luxury — it's essential for everyone.
+        </p>
+
+        <p>
+          By understanding mental health, we can break down stigma, support each
+          other, and create a world where everyone has the opportunity to thrive.
+
+        </p>
+        </div>
+
+        <div class="reveal">
+        <h2>It's more than just "not being sick"</h2>
+        <p>
+          Mental health isn't just the absence of illness — it's about
+          flourishing. It's about finding joy, meaning, and connection in life,
+          even in the face of challenges. You can have a mental illness and still
+          have good mental health in other areas of your life. It's about holistic well-being, not just symptom management. 
+        </p>
+        </div>
+
+        <div class="reveal">    
+        <h2>Everyone's journey is unique</h2>
+        <p>
+          Mental health is deeply personal. What works for one person may not
+          work for another, and that's okay. The important thing is to find what
+          supports your well-being and to seek help when you need it. There's no
+          "right" way to be mentally healthy — it's about finding your own path to wellness.
+        </p>
+
+    </section>
+
+    <!-- ── Common Conditions ── -->
+    <section id="conditions" style="padding-top: 1rem">
+      <div class="conditions-bg reveal">
+        <div class="section-tag lavender">Education</div>
+        <h2>Common mental health conditions</h2>
+        <p class="section-intro" style="margin-bottom: 0">
+          Understanding these conditions reduces stigma and helps people seek
+          help earlier.
+        </p>
+        <div class="conditions-grid">
+          <div class="condition-card">
+            <div class="condition-header">
+              <div class="condition-dot" style="background: #9b8ec4"></div>
+              <h3>Anxiety Disorders</h3>
+            </div>
+            <p>
+              Excessive worry, fear, or apprehension that interferes with daily
+              activities. The most common mental health condition worldwide.
+            </p>
+            <div class="symptoms">
+              <span class="tag lavender">Worry</span>
+              <span class="tag lavender">Panic</span>
+              <span class="tag lavender">Avoidance</span>
+              <span class="tag lavender">Physical tension</span>
+            </div>
+          </div>
+
+          <div class="condition-card">
+            <div class="condition-header">
+              <div class="condition-dot" style="background: #72b4d4"></div>
+              <h3>Depression</h3>
+            </div>
+            <p>
+              More than sadness — it's a persistent low mood, loss of interest,
+              and fatigue that affects all areas of life. Highly treatable.
+            </p>
+            <div class="symptoms">
+              <span class="tag sky">Low mood</span>
+              <span class="tag sky">Fatigue</span>
+              <span class="tag sky">Sleep changes</span>
+              <span class="tag sky">Hopelessness</span>
+            </div>
+          </div>
+
+          <div class="condition-card">
+            <div class="condition-header">
+              <div class="condition-dot" style="background: #f5a882"></div>
+              <h3>PTSD</h3>
+            </div>
+            <p>
+              Post-Traumatic Stress Disorder develops after traumatic events. It
+              involves flashbacks, hypervigilance, and emotional numbness.
+            </p>
+            <div class="symptoms">
+              <span class="tag peach">Flashbacks</span>
+              <span class="tag peach">Nightmares</span>
+              <span class="tag peach">Hypervigilance</span>
+              <span class="tag peach">Avoidance</span>
+            </div>
+          </div>
+
+          <div class="condition-card">
+            <div class="condition-header">
+              <div class="condition-dot" style="background: #7bab8b"></div>
+              <h3>Bipolar Disorder</h3>
+            </div>
+            <p>
+              Characterized by extreme mood swings — from periods of intense
+              highs (mania) to deep lows (depression). Manageable with
+              treatment.
+            </p>
+            <div class="symptoms">
+              <span class="tag sage">Mood swings</span>
+              <span class="tag sage">Mania</span>
+              <span class="tag sage">Depression</span>
+              <span class="tag sage">Energy changes</span>
+            </div>
+          </div>
+
+          <div class="condition-card">
+            <div class="condition-header">
+              <div class="condition-dot" style="background: #c89040"></div>
+              <h3>OCD</h3>
+            </div>
+            <p>
+              Obsessive-Compulsive Disorder involves unwanted, intrusive
+              thoughts and repetitive behaviors performed to reduce anxiety.
+            </p>
+            <div class="symptoms">
+              <span class="tag" style="background: #fbe79b; color: #805000"
+                >Obsessions</span
+              >
+              <span class="tag" style="background: #fbe79b; color: #805000"
+                >Compulsions</span
+              >
+              <span class="tag" style="background: #fbe79b; color: #805000"
+                >Rituals</span
+              >
+            </div>
+          </div>
+
+          <div class="condition-card">
+            <div class="condition-header">
+              <div class="condition-dot" style="background: #d06080"></div>
+              <h3>Eating Disorders</h3>
+            </div>
+            <p>
+              Complex mental health conditions involving troubled relationships
+              with food, body image, and weight. Recovery is possible with
+              support.
+            </p>
+            <div class="symptoms">
+              <span class="tag" style="background: #fdddd1; color: #a04060"
+                >Body image</span
+              >
+              <span class="tag" style="background: #fdddd1; color: #a04060"
+                >Restriction</span
+              >
+              <span class="tag" style="background: #fdddd1; color: #a04060"
+                >Binging</span
+              >
+            </div>
+          </div>
+
+            <div class="condition-card">
+                <div class="condition-header">
+                <div class="condition-dot" style="background: #7b6ec0"></div>
+                <h3>Schizophrenia</h3>
+                </div>
+                <p>
+                A severe mental disorder affecting how a person thinks, feels, and
+                behaves. It can involve hallucinations, delusions, and disorganized
+                thinking.
+                </p>
+                <div class="symptoms">
+                <span class="tag" style="background: #d8d1ef; color: #5a4a80"
+                    >Hallucinations</span 
+                >
+                <span class="tag" style = "background: #d8d1ef; color: #5a4a80"
+                    >Delusions</span    
+                >
+                <span class="tag" style="background: #d8d1ef; color: #5a4a80"
+                    >Disorganized thinking</span
+                >
+            </div>
+            </div>
+
+            <div class="condition-card">
+                <div class="condition-header">
+                <div class="condition-dot" style="background: #5d9075"></div>
+                <h3>ADHD</h3>
+                </div>
+                <p>
+                Attention-Deficit/Hyperactivity Disorder is a neurodevelopmental disorder characterized by inattention, hyperactivity, and impulsivity that interferes with functioning or development.
+                </p>
+                <div class="symptoms">
+                <span class="tag" style="background: #7bab8b; color: white"
+                    >Inattention</span  
+                >
+                <span class="tag" style="background: #7bab8b; color: white"
+                    >Hyperactivity</span
+                >
+                <span class="tag" style="background: #7bab8b; color: white"
+                    >Impulsivity</span
+                >
+                </div>
+            </div>
+
+            <div class="condition-card">
+                <div class="condition-header">
+                <div class="condition-dot" style="background: #f5c842"></div>
+                <h3>Personality Disorders</h3>
+                </div>
+                <p>
+                A group of mental health conditions characterized by enduring patterns of behavior, cognition, and inner experience that deviate from cultural expectations and cause distress or impairment.
+                </p>
+                <div class="symptoms">
+                <span class="tag" style="background: #f5c842; color: white"
+                    >Unstable relationships</span
+                >
+                <span class="tag" style="background: #f5c842; color: white"
+                    >Impulsivity</span  
+                >
+                <span class="tag" style="background:#f5c842; color: white"
+                    >Emotional instability</span    
+                >
+            </div>
+                </div>
+
+            <div class="condition-card">
+                <div class="condition-header">
+                <div class="condition-dot" style="background: #fbe79b"></div>
+                <h3>Substance Use Disorders</h3>
+                </div>
+                <p>
+                A condition in which the use of one or more substances leads to a clinically significant impairment or distress, including health problems, disability, and failure to meet major responsibilities at work, school, or home.
+                </p>
+                <div class="symptoms">
+                <span class="tag" style="background: #fbe79b; color: #805000"
+                    >Craving</span  
+                >                
+                <span class="tag" style="background: #fbe79b; color: #805000"
+                    >Loss of control</span  
+                >                
+                <span class="tag" style="background: #fbe79b; color: #805000"
+                    >Physical dependence</span    
+                >
+            </div>
+        </div>
+
+            <div class="condition-card">
+                <div class="condition-header">
+                <div class="condition-dot" style="background: #72b4d4"></div>
+                <h3>Autism Spectrum Disorder</h3>
+                </div>
+                <p>
+                A neurodevelopmental disorder characterized by challenges with social communication and interaction, 
+                and restricted, repetitive patterns of behavior, interests, or activities.
+                </p>
+                <div class="symptoms">
+                <span class="tag" style="background: #72b4d4; color: white"
+                    >Social communication difficulties</span
+                >
+                <span class="tag" style     
+                ="background: #72b4d4; color: white"
+                    >Restricted interests</span
+                >
+                <span class="tag" style="background: #72b4d4; color: white"
+                    >Repetitive behaviors</span
+                >
+                </div>
+            </div>
+
+            <div class="condition-card">
+                <div class="condition-header">
+                <div class="condition-dot" style="background: #c89040"></div>
+                <h3>Neurocognitive Disorders</h3>
+                </div>
+                <p>
+                A group of disorders characterized by a decline in cognitive function, including memory, 
+                attention, language, and problem-solving abilities, that interferes with daily functioning.
+                </p>
+                <div class="symptoms">
+                <span class="tag" style="background: #c89040; color: white"
+                    >Memory loss</span      
+                >
+                <span class="tag" style="background: #c89040; color: white"
+                    >Cognitive decline</span
+                >
+                <span class="tag" style="background: #c89040; color: white"
+                    >Impaired functioning</span
+                >
+                </div>
+            </div>
+
+      </div>
+    </section>
+
+    <!-- ── Warning signs ── -->
+    <section style="padding-top: 2rem">
+      <div class="warning-section reveal">
+        <div class="section-tag peach">Know the signs</div>
+        <h2>Warning signs to watch for</h2>
+        <p class="section-intro" style="margin-bottom: 0">
+          These signs don't always mean someone has a mental illness — but
+          they're signals worth paying attention to, in yourself or others.
+        </p>
+        <div class="signs-list">
+          <div class="sign-item">
+            <span class="sign-num">01</span>
+            <div>
+              <strong>Withdrawal from others</strong>
+              <p>
+                Pulling away from friends, family, and activities once enjoyed.
+              </p>
+            </div>
+          </div>
+          <div class="sign-item">
+            <span class="sign-num">02</span>
+            <div>
+              <strong>Extreme mood changes</strong>
+              <p>
+                Unexplained highs and lows, or emotional outbursts out of
+                proportion.
+              </p>
+            </div>
+          </div>
+          <div class="sign-item">
+            <span class="sign-num">03</span>
+            <div>
+              <strong>Difficulty with daily tasks</strong>
+              <p>
+                Struggling to carry out routine tasks like eating, sleeping, or
+                work.
+              </p>
+            </div>
+          </div>
+          <div class="sign-item">
+            <span class="sign-num">04</span>
+            <div>
+              <strong>Feeling hopeless</strong>
+              <p>
+                Persistent feelings that things won't get better or that life
+                isn't worth living.
+              </p>
+            </div>
+          </div>
+          <div class="sign-item">
+            <span class="sign-num">05</span>
+            <div>
+              <strong>Confused thinking</strong>
+              <p>
+                Trouble concentrating, remembering things, or making decisions.
+              </p>
+            </div>
+          </div>
+          <div class="sign-item">
+            <span class="sign-num">06</span>
+            <div>
+              <strong>Increased substance use</strong>
+              <p>
+                Using alcohol or drugs to cope with feelings or numb emotions.
+              </p>
+            </div>
+          </div>
+          <div class="sign-item">
+            <span class="sign-num">07</span>
+            <div>
+              <strong>Unexplained physical symptoms</strong>
+              <p>
+                Headaches, stomach problems, or other physical complaints
+                without clear cause.
+              </p>
+            </div>
+          </div>
+          <div class="sign-item">
+            <span class="sign-num">08</span>
+            <div>
+              <strong>Thoughts of self-harm</strong>
+              <p>
+                Any thoughts of hurting yourself or others — always take these
+                seriously.
+              </p>
+            </div>
+          </div>
+
+          <div class="sign-item">
+            <span class="sign-num">09</span>
+            <div>
+              <strong>Changes in sleep patterns</strong>
+              <p>
+                Sleeping too much or too little, or having trouble falling or
+                staying asleep.
+              </p>
+            </div>
+          </div>
+
+            <div class="sign-item">
+                <span class="sign-num">10</span>
+                <div>
+                <strong>Loss of interest</strong>
+                <p>
+                    No longer finding joy in activities or hobbies that used to be
+                    enjoyable.
+                </p>
+                </div>
+            </div>
+
+            <div class="sign-item">
+                <span class="sign-num">11</span>
+                <div>
+                <strong>Changes in appetite</strong>
+                <p>
+                    Eating much more or much less than usual, or having significant
+                    weight changes.
+                </p>
+                </div>
+            </div>
+
+            <div class="sign-item">
+                <span class="sign-num">12</span>
+                <div>
+                <strong>Physical agitation</strong>
+                <p>
+                    Restlessness, pacing, or an inability to sit still.
+                </p>
+                </div>
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Coping Toolkit ── -->
+    <section id="cope">
+      <div class="reveal">
+        <div class="section-tag sage">Self-care toolkit</div>
+        <h2>Evidence-based coping strategies</h2>
+        <p class="section-intro">
+          These strategies are backed by research. None replace professional
+          help, but they can make a real difference in daily mental wellness.
+        </p>
+      </div>
+      <div class="toolkit-grid reveal">
+        <div class="tool-card a">
+          <span class="tool-emoji">🧘</span>
+          <h3>Mindfulness</h3>
+          <p>
+            Paying attention to the present moment without judgment. Just 10
+            minutes daily can reduce stress and anxiety significantly.
+          </p>
+        </div>
+        <div class="tool-card b">
+          <span class="tool-emoji">🏃</span>
+          <h3>Physical movement</h3>
+          <p>
+            Exercise releases endorphins, reduces cortisol, and improves sleep.
+            Even a 20-minute walk has measurable mood benefits.
+          </p>
+        </div>
+        <div class="tool-card c">
+          <span class="tool-emoji">📓</span>
+          <h3>Journaling</h3>
+          <p>
+            Writing about thoughts and feelings helps process emotions, gain
+            perspective, and track patterns in your mental health.
+          </p>
+        </div>
+        <div class="tool-card d">
+          <span class="tool-emoji">😴</span>
+          <h3>Sleep hygiene</h3>
+          <p>
+            Sleep and mental health are deeply linked. Consistent sleep
+            schedules and wind-down routines can transform how you feel.
+          </p>
+        </div>
+        <div class="tool-card e">
+          <span class="tool-emoji">🤲</span>
+          <h3>Social connection</h3>
+          <p>
+            Humans are wired for connection. Spending time with supportive
+            people — even briefly — is a powerful buffer against mental illness.
+          </p>
+        </div>
+        <div class="tool-card f">
+          <span class="tool-emoji">🌬️</span>
+          <h3>Breathing exercises</h3>
+          <p>
+            Deep breathing activates the parasympathetic nervous system. Try
+            4-7-8 breathing: inhale 4s, hold 7s, exhale 8s.
+          </p>
+        </div>
+
+        <div class="tool-card g">
+          <span class="tool-emoji">🎨</span>
+          <h3>Creative expression</h3>
+          <p>
+            Engaging in creative activities like art, music, or writing can be a
+            powerful way to process emotions and express yourself.
+          </p>
+        </div>
+
+        <div class="tool-card h">
+          <span class="tool-emoji">🌿</span>
+          <h3>Nature exposure</h3>
+          <p>
+            Spending time in nature has been shown to reduce stress, improve mood,
+            and enhance overall well-being.
+          </p>
+        </div>
+
+        <div class="tool-card i">
+          <span class="tool-emoji">🧩</span>
+          <h3>Problem-solving</h3>
+          <p>
+            Breaking down large problems into smaller, manageable steps can reduce
+            feelings of overwhelm and increase a sense of control.
+          </p>
+        </div>
+
+        <div class="tool-card j">
+          <span class="tool-emoji">📞</span>
+          <h3>Professional support</h3>
+          <p>
+            Seeking help from a mental health professional is a sign of strength,
+            not weakness. Therapy and counseling can provide valuable tools and
+            insights for managing mental health challenges.
+          </p>
+        </div>
+
+        <div class="tool-card k">
+          <span class="tool-emoji">💊</span>
+          <h3>Medication</h3>
+          <p>
+            When properly prescribed and monitored, psychiatric medication can be an
+            effective treatment for many mental health conditions, helping to restore
+            balance and improve quality of life.
+          </p>
+        </div>
+
+        <div class="tool-card l">
+          <span class="tool-emoji">🧑‍🤝‍🧑</span>
+          <h3>Social support</h3>
+          <p>
+            Having a strong support network can make a significant difference in
+            managing mental health challenges. Don't hesitate to reach out to
+            friends, family, or support groups.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Myths vs Facts ── -->
+    <section id="myths" style="padding-top: 2rem">
+      <div class="myths-section reveal">
+        <div class="section-tag sage">Busting stigma</div>
+        <h2>Myths vs. facts</h2>
+        <p class="section-intro" style="margin-bottom: 2.5rem">
+          Stigma is one of the biggest barriers to people getting help. Let's
+          set the record straight.
+        </p>
+
+        <div class="myth-pair">
+          <div class="myth-box">
+            <div class="label">❌ Myth</div>
+            <p>"Mental illness is a sign of weakness or personal failure."</p>
+          </div>
+          <div class="fact-box">
+            <div class="label">✅ Fact</div>
+            <p>
+              Mental illness is caused by complex interactions of genetics,
+              biology, environment, and life experiences — not weakness. It can
+              affect anyone.
+            </p>
+          </div>
+        </div>
+
+        <div class="myth-pair">
+          <div class="myth-box">
+            <div class="label">❌ Myth</div>
+            <p>"People with mental illness are dangerous and unpredictable."</p>
+          </div>
+          <div class="fact-box">
+            <div class="label">✅ Fact</div>
+            <p>
+              The vast majority of people with mental illness are not violent.
+              In fact, they are more likely to be victims of violence than
+              perpetrators.
+            </p>
+          </div>
+        </div>
+
+        <div class="myth-pair">
+          <div class="myth-box">
+            <div class="label">❌ Myth</div>
+            <p>"You can just 'snap out of it' if you try hard enough."</p>
+          </div>
+          <div class="fact-box">
+            <div class="label">✅ Fact</div>
+            <p>
+              Mental illnesses are real medical conditions. Telling someone to
+              "cheer up" is like telling someone with diabetes to just "produce
+              more insulin."
+            </p>
+          </div>
+        </div>
+
+        <div class="myth-pair">
+          <div class="myth-box">
+            <div class="label">❌ Myth</div>
+            <p>"Therapy is only for people with serious problems."</p>
+          </div>
+          <div class="fact-box">
+            <div class="label">✅ Fact</div>
+            <p>
+              Therapy benefits anyone who wants to better understand themselves,
+              improve relationships, or develop coping skills — you don't need a
+              diagnosis.
+            </p>
+          </div>
+        </div>
+
+        <div class="myth-pair">
+          <div class="myth-box">
+            <div class="label">❌ Myth</div>
+            <p>
+              "Medication will change your personality or make you a zombie."
+            </p>
+          </div>
+          <div class="fact-box">
+            <div class="label">✅ Fact</div>
+            <p>
+              When properly prescribed and monitored, psychiatric medication
+              helps restore balance — helping you feel more like yourself, not
+              less.
+            </p>
+          </div>
+        </div>
+
+        <div class="myth-pair">
+          <div class="myth-box">
+            <div class="label">❌ Myth</div>
+            <p>"Mental illness is a lifelong sentence."</p>
+          </div>
+          <div class="fact-box">
+            <div class="label">✅ Fact</div>
+            <p>
+              Many people recover completely from mental illness, and most can
+              manage symptoms effectively with the right treatment and support.
+            </p>
+          </div>
+        </div>
+
+        <div class="myth-pair">
+          <div class="myth-box">
+            <div class="label">❌ Myth</div>
+            <p>"Only weak people need help."</p>
+          </div>
+          <div class="fact-box">
+            <div class="label">✅ Fact</div>
+            <p>
+              Seeking help is a sign of strength and self-awareness. It takes
+              courage to acknowledge when you need support and to take steps
+              toward healing.
+            </p>
+          </div>
+      </div>
+    </section>
+
+    <!-- ── How to get help ── -->
+    <section id="help">
+      <div
+        style="
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 4rem;
+          align-items: start;
+        "
+        class="reveal"
+      >
+        <div>
+          <div class="section-tag sky">Taking action</div>
+          <h2>How to get help — step by step</h2>
+          <p class="section-intro">
+            Taking the first step is often the hardest. Here's how to start.
+          </p>
+          <div class="help-steps">
+            <div class="help-step">
+              <div class="step-num">1</div>
+              <div>
+                <h3>Acknowledge your feelings</h3>
+                <p>
+                  Notice and name what you're experiencing without judgment.
+                  Recognizing that something is wrong is a courageous and
+                  necessary first step.
+                </p>
+              </div>
+            </div>
+            <div class="help-step">
+              <div class="step-num">2</div>
+              <div>
+                <h3>Talk to someone you trust</h3>
+                <p>
+                  Share what you're going through with a friend, family member,
+                  or colleague. You don't need to have all the answers — just
+                  opening up helps.
+                </p>
+              </div>
+            </div>
+            <div class="help-step">
+              <div class="step-num">3</div>
+              <div>
+                <h3>See a primary care doctor</h3>
+                <p>
+                  Your GP or primary doctor is a great starting point. They can
+                  rule out physical causes, offer a referral, or prescribe
+                  initial treatment.
+                </p>
+              </div>
+            </div>
+            <div class="help-step">
+              <div class="step-num">4</div>
+              <div>
+                <h3>Find a mental health professional</h3>
+                <p>
+                  A psychologist, therapist, or psychiatrist can provide
+                  diagnosis and treatment. Many now offer online appointments
+                  for accessibility.
+                </p>
+              </div>
+            </div>
+            <div class="help-step">
+              <div class="step-num">5</div>
+              <div>
+                <h3>Be patient with yourself</h3>
+                <p>
+                  Recovery isn't linear. There will be setbacks. Celebrate small
+                  wins, adjust your approach as needed, and keep going.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-tag sky" style="margin-top: 1rem">Resources</div>
+          <h2 style="margin-bottom: 1.5rem">Where to turn</h2>
+          <div class="resources-grid" style="grid-template-columns: 1fr">
+            <div class="resource-card crisis">
+              <h3>🚨 Crisis support</h3>
+              <ul>
+                <li>
+                  <span>📞</span> National Suicide Prevention Lifeline: 988
+                </li>
+                <li><span>💬</span> Crisis Text Line: Text HOME to 741741</li>
+                <li>
+                  <span>🌐</span> International Association for Suicide
+                  Prevention
+                </li>
+              </ul>
+            </div>
+            <div class="resource-card support">
+              <h3>🤝 Peer & community support</h3>
+              <ul>
+                <li><span>🌱</span> NAMI Helpline: 1-800-950-NAMI</li>
+                <li><span>👥</span> NAMI Support Groups (free, nationwide)</li>
+                <li><span>📱</span> Mental Health America screening tools</li>
+              </ul>
+            </div>
+            <div class="resource-card online">
+              <h3>💻 Online therapy</h3>
+              <ul>
+                <li>
+                  <span>🖥️</span> BetterHelp — professional therapists online
+                </li>
+                <li><span>🖥️</span> Talkspace — text & video therapy</li>
+                <li>
+                  <span>🖥️</span> Open Path Collective — affordable therapy
+                </li>
+              </ul>
+            </div>
+            <div class="resource-card local">
+              <h3>🏥 Find local services</h3>
+              <ul>
+                <li><span>🔍</span> Psychology Today therapist finder</li>
+                <li><span>🏢</span> Community mental health centers</li>
+                <li><span>🎓</span> University training clinics (low-cost)</li>
+              </ul>
+            </div>
+
+            <div class="resource-card self-help">
+              <h3>📚 Self-help resources</h3>
+              <ul>
+                <li><span>📖</span> "The Anxiety and Phobia Workbook"</li>
+                <li><span>📖</span> "Feeling Good: The New Mood Therapy"</li>
+                <li><span>📖</span> "The Body Keeps the Score"</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Footer ── -->
+    <footer>
+      <div class="footer-logo">🌱 MindBloom</div>
+      <p>Mental health education for everyone, everywhere.</p>
+      <p class="disclaimer">
+        MindBloom is for educational purposes only and does not constitute
+        medical advice. If you are experiencing a mental health crisis, please
+        contact a qualified professional or call a crisis helpline immediately.
+        The information provided here is general in nature and should not
+        replace personalized care from a licensed mental health provider.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
