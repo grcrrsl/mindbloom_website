@@ -126,5 +126,14 @@ const tips = [
       setInterval(updateTipAndDate, 86400000);
     }, msUntilMidnight());
   });
+function scrollCarousel(direction) {
+  const container = document.getElementById("videoCarousel");
 
+  const scrollAmount = 320; // width of card
+
+  container.scrollBy({
+    left: direction * scrollAmount,
+    behavior: "smooth"
+  });
+}
   
