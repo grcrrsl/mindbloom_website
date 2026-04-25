@@ -182,7 +182,7 @@ document.querySelectorAll(".quiz-card").forEach((card) => {
     } else {
       if (score <= 5)
         return {
-          icon: "fa-face-smile",
+          icon: "fa-bolt",
           level: "Low",
           text: "Low stress level. Your stress levels appear manageable — keep up your routines."
         };
