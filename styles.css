@@ -80,7 +80,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   height: 64px;
-  position: relative;
 }
 .nav-logo {
   font-family: "Fraunces", serif;
@@ -112,7 +111,6 @@ nav {
 .nav-links a:hover {
   color: var(--sage);
 }
-
 
 /* ── Hero ── */
 .hero {

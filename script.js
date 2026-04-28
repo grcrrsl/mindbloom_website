@@ -33,41 +33,253 @@ scrollBtn.addEventListener("click", () => {
 
 // tips for a day
 const tips = [
-  "Take 5 minutes today to breathe deeply and reset.",
-  "Go for a short walk — even 10 minutes helps your mood.",
-  "Drink water and stretch your body.",
-  "Talk to someone you trust today.",
-  "Write down one thing you're grateful for.",
-  "Rest is productive too — don’t feel guilty for it.",
-  "Stretch your body and release tension.",
-  "Limit your screen time before bed to improve sleep quality.",
-  "Take a break — even a few minutes can help reset your mind.",
-  "You don’t have to be productive all the time. Rest matters.",
-  "Try a simple breathing exercise: inhale 4s, exhale 6s.",
-  "Step outside and get some fresh air — it can lift your mood.",
-  "Listen to music that makes you feel calm or happy.",
-  "Be kind to yourself — you’re doing the best you can.",
-  "Avoid comparing yourself to others — your journey is unique.",
-  "Spend a few minutes organizing your space.",
-  "Celebrate small wins today — they matter.",
-  "Take a moment to notice something beautiful around you.",
-  "Practice saying 'no' when you need to protect your energy.",
-  "Reach out — a simple message can strengthen connections.",
-  "Do one thing today that makes you feel good.",
-  "Let go of what you can’t control.",
-  "Remind yourself: this feeling is temporary.",
-  "Stretch your body and release tension.",
-  "You are allowed to take things one step at a time.",
-  "Break big tasks into smaller steps to reduce overwhelm.",
-  "Smile, even a little — it can actually improve your mood.",
+  "Take 5 minutes to breathe slowly and reset your mind.",
+  "Go for a short walk and notice your surroundings.",
+  "Drink water and give your body what it needs.",
+  "Stretch gently to release built-up tension.",
+  "Talk to someone you trust, even briefly.",
+  "Write one thing you're grateful for today.",
+  "Allow yourself to rest without feeling guilty.",
+  "Limit screen time before going to sleep.",
+  "Pause and take a break from what you're doing.",
+  "Remind yourself that rest is productive too.",
+  "Try a breathing pattern: inhale 4, exhale 6.",
+  "Step outside and get some fresh air.",
+  "Listen to music that relaxes you.",
+  "Speak to yourself with kindness today.",
+  "Avoid comparing your progress to others.",
+  "Organize a small part of your space.",
+  "Celebrate even the smallest wins.",
+  "Notice something simple but beautiful.",
+  "Say no when something drains your energy.",
+  "Send a message to someone you miss.",
+  "Do something today just because you enjoy it.",
+  "Let go of things outside your control.",
+  "Remind yourself that tough feelings pass.",
+  "Take things one step at a time.",
+  "Break a big task into smaller steps.",
+  "Smile, even if it’s just a little.",
+  "Rest your eyes for a few minutes.",
+  "Drink something warm and comforting.",
+  "Write your thoughts down without filtering.",
+  "Sit in silence for a moment.",
+  "Stretch your shoulders and relax your neck.",
+  "Focus only on your breathing for 1 minute.",
+  "Declutter one small area around you.",
+  "Pause before reacting to stress.",
+  "Be proud of how far you've come.",
+  "Focus on completing one task well.",
+  "Eat something nourishing today.",
+  "Check your posture and adjust it.",
+  "Walk mindfully, even for a few steps.",
+  "Forgive yourself for past mistakes.",
+  "Start your day without rushing.",
+  "End your day with a calm reflection.",
+  "Don’t pressure yourself to do everything.",
+  "Focus on what you *can* control.",
+  "Take a break from social media today.",
+  "Spend a moment connecting with nature.",
+  "Enjoy a quiet moment without distractions.",
+  "Replace one negative thought with a positive one.",
+  "Practice patience with yourself.",
+  "Do something creative, even simple.",
+  "Encourage yourself like a friend would.",
+  "Relax your shoulders and unclench your jaw.",
+  "Stay present instead of overthinking.",
+  "Allow yourself to feel without judgment.",
+  "Take a few deep breaths right now.",
+  "Use gentle words when talking to yourself.",
+  "Slow your pace intentionally.",
+  "Focus on progress, not perfection.",
+  "Make space for yourself today.",
+  "Drink water regularly throughout the day.",
+  "Stretch your legs after sitting too long.",
+  "Take mindful pauses between tasks.",
+  "Appreciate small moments more.",
+  "Reduce unnecessary pressure on yourself.",
+  "Hold onto hope, even a little.",
+  "Trust that you're moving forward.",
+  "Accept that imperfection is human.",
+  "Keep showing up, even if slowly.",
+  "Stay grounded in the present.",
+  "Practice gratitude again today.",
+  "Take a peaceful walk if you can.",
+  "Smile at someone or yourself.",
+  "Listen to your body’s signals.",
+  "Rest when you feel tired.",
+  "Do less, but do it well.",
+  "Focus only on today.",
+  "Be gentle with your thoughts.",
+  "Pause before making decisions.",
+  "Stay aware of your emotions.",
+  "Challenge negative thinking patterns.",
+  "Release what no longer helps you.",
+  "Keep things simple today.",
+  "Choose calm over chaos.",
+  "Give yourself enough time.",
+  "Respect your own pace.",
+  "Allow yourself to pause.",
+  "Maintain balance in your day.",
+  "Take care of your mental space.",
+  "Choose what feels right for you.",
+  "Let go of unnecessary pressure.",
+  "Stay focused on what matters.",
+  "Breathe slowly and steadily.",
+  "Create moments of calm.",
+  "Relax your thoughts when overwhelmed.",
+  "Stay optimistic where possible.",
+  "Take care of yourself intentionally.",
+  "Recognize your effort today.",
+  "Clear your mind for a moment.",
+  "Create a peaceful environment.",
+  "Keep going at your own pace.",
+  "Stay steady and consistent.",
+  "Trust your decisions.",
+  "Be mindful of your actions.",
+  "Relax deeply when needed.",
+  "Take things lightly when possible.",
+  "Focus inward for clarity.",
+  "Stay present in conversations.",
+  "Calm your thoughts gently.",
+  "Be patient with progress.",
+  "Prioritize rest when needed.",
+  "Stay grounded in reality.",
+  "Be strong, but also soft.",
+  "Take breaks without guilt.",
+  "Stay calm in small moments.",
+  "Breathe deeply and slowly.",
+  "Focus clearly on your goals.",
+  "Be gentle with your energy.",
+  "Take care of your physical body.",
+  "Move forward in small steps.",
+  "Stay kind to yourself always.",
+  "Relax completely for a moment.",
+  "Protect your inner peace.",
+  "Stay aware of your needs.",
+  "Take your time with decisions.",
+  "Enjoy moments of stillness.",
+  "Center yourself again.",
+  "Rest whenever necessary.",
+  "Return to calm when stressed.",
+  "Keep your balance steady.",
+  "Stay mindful again today.",
+  "Reconnect with your calm.",
+  "Choose peace again.",
+  "Take care of your energy again.",
+  "Ground yourself again.",
+  "Be kind again today.",
+  "Rest again if needed.",
+  "Stay calm throughout the day.",
+  "Focus on what matters most.",
+  "Relax your thoughts today.",
+  "Stay mindful in your actions.",
+  "Be gentle with your expectations.",
+  "Allow yourself to rest today.",
+  "Stay positive where you can.",
+  "Keep calm in challenges.",
+  "Balance your energy today.",
+  "Relax your mind intentionally.",
+  "Take care of your needs.",
+  "Stay peaceful in small moments.",
+  "Be kind in your thoughts.",
+  "Stay grounded emotionally.",
+  "Listen to your body’s needs.",
+  "Wind down calmly tonight.",
+  "Relax your thoughts before bed.",
+  "Let your body rest fully.",
+  "Stay peaceful as you sleep.",
+  "Slow your thoughts at night.",
+  "Clear your mind before sleeping.",
+  "Release stress from the day.",
+  "Take deep breaths before bed.",
+  "Unwind slowly and gently.",
+  "Allow yourself proper rest.",
+  "Let go of worries tonight.",
+  "Sleep with a calm mind.",
+  "Recharge your energy.",
+  "Prepare yourself for tomorrow.",
+  "Stay hopeful for a new day.",
+  "Start fresh tomorrow.",
+  "Take tomorrow one step at a time.",
+  "Stay positive about what’s ahead.",
+  "Be kind to yourself tomorrow.",
+  "Focus on your goals tomorrow.",
+  "Stay mindful tomorrow.",
+  "Relax into the new day.",
+  "Take care of yourself tomorrow.",
+  "Stay peaceful tomorrow.",
+  "Keep balance tomorrow.",
+  "Rest well for tomorrow.",
+  "Begin again tomorrow.",
+  "Be gentle tomorrow.",
+  "Stay grounded tomorrow.",
+  "Move forward steadily.",
+  "Trust the process.",
+  "Stay strong through challenges.",
+  "Keep going forward.",
 ];
 
+// ===================== GENERATOR (NO REPEAT BACKUP) =====================
+const actions = [
+  "Take time to",
+  "Try to",
+  "Remember to",
+  "Pause and",
+  "Allow yourself to",
+  "Make space to",
+  "Give yourself time to",
+  "Focus on",
+];
+
+const activities = [
+  "breathe deeply",
+  "relax your mind",
+  "go outside",
+  "drink water",
+  "slow down",
+  "stretch",
+  "clear your thoughts",
+  "rest your body",
+];
+
+const endings = [
+  "today.",
+  "for your well-being.",
+  "you deserve it.",
+  "even a little helps.",
+  "and notice how you feel.",
+  "without pressure.",
+  "at your own pace.",
+];
+function generateExtraTip(day) {
+  const a = actions[day % actions.length];
+  const b = activities[Math.floor(day / actions.length) % activities.length];
+  const c =
+    endings[
+      Math.floor(day / (actions.length * activities.length)) % endings.length
+    ];
+  return `${a} ${b} ${c}`;
+}
+// ===================== GET TIP =====================
+function getDayOfYear(date) {
+  const start = new Date(date.getFullYear(), 0, 0);
+  const diff = date - start;
+  const oneDay = 1000 * 60 * 60 * 24;
+  return Math.floor(diff / oneDay); // 1–365
+}
 function getTipOfTheDay() {
   const today = new Date();
-  const dayNumber = Math.floor(today.getTime() / (1000 * 60 * 60 * 24));
-  return tips[dayNumber % tips.length];
-}
+  const day = getDayOfYear(today); // 1–365
 
+  // combine real + generated tips into 365 slots
+  if (day <= tips.length) {
+    return tips[day - 1];
+  }
+
+  // generate based on remaining slots (shifted index)
+  return generateExtraTip(day - tips.length);
+}
+// ===================== DATE FORMAT =====================
 function formatDate(date) {
   return date.toLocaleDateString("en-US", {
     weekday: "long",
@@ -76,7 +288,7 @@ function formatDate(date) {
   });
 }
 
-//  Greeting with icons
+// ===================== GREETING =====================
 function getGreeting() {
   const hour = new Date().getHours();
 
@@ -89,16 +301,22 @@ function getGreeting() {
   }
 }
 
+// ===================== SAFE UPDATE =====================
 function updateTipAndDate() {
   const today = new Date();
 
-  document.getElementById("tipText").innerText = getTipOfTheDay();
-  document.getElementById("tipDate").innerText = formatDate(today);
+  const tipText = document.getElementById("tipText");
+  const tipDate = document.getElementById("tipDate");
+  const greetingText = document.getElementById("greetingText");
 
-  //  use innerHTML for icons
-  document.getElementById("greetingText").innerHTML = getGreeting();
+  if (!tipText || !tipDate || !greetingText) return;
+
+  tipText.innerText = getTipOfTheDay();
+  tipDate.innerText = formatDate(today);
+  greetingText.innerHTML = getGreeting();
 }
 
+// ===================== MIDNIGHT TIMER =====================
 function msUntilMidnight() {
   const now = new Date();
   const midnight = new Date();
@@ -106,25 +324,19 @@ function msUntilMidnight() {
   return midnight - now;
 }
 
+// ===================== INIT =====================
 document.addEventListener("DOMContentLoaded", () => {
-  const tipText = document.getElementById("tipText");
-  const tipDate = document.getElementById("tipDate");
-  const greetingText = document.getElementById("greetingText");
-
-  // first load
   updateTipAndDate();
 
-  // animation
   setTimeout(() => {
-    tipDate.classList.add("show");
-    tipText.classList.add("show");
-    greetingText.classList.add("show");
+    document.getElementById("tipText")?.classList.add("show");
+    document.getElementById("tipDate")?.classList.add("show");
+    document.getElementById("greetingText")?.classList.add("show");
   }, 200);
 
-  // update at midnight
+  // update exactly at midnight
   setTimeout(() => {
     updateTipAndDate();
-
     setInterval(updateTipAndDate, 86400000);
   }, msUntilMidnight());
 });
@@ -163,42 +375,42 @@ document.querySelectorAll(".quiz-card").forEach((card) => {
         return {
           icon: "fa-face-smile",
           level: "Low",
-          text: "Low mood symptoms. You're doing well overall — keep maintaining your self-care habits."
+          text: "Low mood symptoms. You're doing well overall — keep maintaining your self-care habits.",
         };
       if (score <= 9)
         return {
           icon: "fa-cloud-sun",
           level: "Mild",
-          text: "Mild mood symptoms. You're experiencing some difficulties — consider small coping strategies."
+          text: "Mild mood symptoms. You're experiencing some difficulties — consider small coping strategies.",
         };
       if (score <= 14)
         return {
           icon: "fa-cloud-rain",
           level: "Moderate",
-          text: "Moderate mood symptoms. It may help to talk to someone you trust or explore support resources."
+          text: "Moderate mood symptoms. It may help to talk to someone you trust or explore support resources.",
         };
       return {
         icon: "fa-bolt",
         level: "High",
-        text: "Higher level of distress. Reaching out to a mental health professional is strongly recommended."
+        text: "Higher level of distress. Reaching out to a mental health professional is strongly recommended.",
       };
     } else {
       if (score <= 5)
         return {
           icon: "fa-bolt",
           level: "Low",
-          text: "Low stress level. Your stress levels appear manageable — keep up your routines."
+          text: "Low stress level. Your stress levels appear manageable — keep up your routines.",
         };
       if (score <= 10)
         return {
           icon: "fa-face-meh",
           level: "Moderate",
-          text: "Moderate stress. Try identifying key stressors and introduce small daily stress-relief habits."
+          text: "Moderate stress. Try identifying key stressors and introduce small daily stress-relief habits.",
         };
       return {
         icon: "fa-face-tired",
         level: "High",
-        text: "High stress level. It may help to reassess your workload and seek support or guidance."
+        text: "High stress level. It may help to reassess your workload and seek support or guidance.",
       };
     }
   }
@@ -243,9 +455,7 @@ document.querySelectorAll(".quiz-card").forEach((card) => {
           const total_score = scores.reduce((a, b) => a + b, 0);
 
           // ✅ correct max score per quiz
-          const max_score = card.id === "moodQuiz"
-            ? total * 3
-            : total * 4;
+          const max_score = card.id === "moodQuiz" ? total * 3 : total * 4;
 
           const res = getResult(card.id, total_score);
 
