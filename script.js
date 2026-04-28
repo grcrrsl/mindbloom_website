@@ -30,6 +30,8 @@ scrollBtn.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+// tips for a day
 const tips = [
   "Take 5 minutes today to breathe deeply and reset.",
   "Go for a short walk — even 10 minutes helps your mood.",
@@ -74,7 +76,7 @@ function formatDate(date) {
   });
 }
 
-// ✅ Greeting with icons
+//  Greeting with icons
 function getGreeting() {
   const hour = new Date().getHours();
 
@@ -93,7 +95,7 @@ function updateTipAndDate() {
   document.getElementById("tipText").innerText = getTipOfTheDay();
   document.getElementById("tipDate").innerText = formatDate(today);
 
-  // ⚠️ use innerHTML for icons
+  //  use innerHTML for icons
   document.getElementById("greetingText").innerHTML = getGreeting();
 }
 
@@ -126,6 +128,8 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(updateTipAndDate, 86400000);
   }, msUntilMidnight());
 });
+
+// ScrollCarousel Video
 function scrollCarousel(direction) {
   const container = document.getElementById("videoCarousel");
 
@@ -138,7 +142,6 @@ function scrollCarousel(direction) {
 }
 
 /* /── Quiz Logic ── */
-/* ── Quiz Logic ── */
 document.querySelectorAll(".quiz-card").forEach((card) => {
   let scores = [];
   let currentStep = 1;

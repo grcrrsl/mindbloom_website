@@ -80,6 +80,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   height: 64px;
+  position: relative;
 }
 .nav-logo {
   font-family: "Fraunces", serif;
@@ -89,12 +90,16 @@ nav {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  position: absolute;
+  left: 2.5rem;
 }
 .nav-logo span {
   color: var(--text);
 }
 .nav-links {
+  margin: auto;
   display: flex;
+  align-items: center;
   gap: 2rem;
 }
 .nav-links a {
@@ -107,25 +112,7 @@ nav {
 .nav-links a:hover {
   color: var(--sage);
 }
-.nav-btn {
-  background: var(--sage);
-  color: white;
-  border: none;
-  padding: 0.5rem 1.2rem;
-  border-radius: 50px;
-  font-family: "DM Sans", sans-serif;
-  font-size: 0.875rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition:
-    transform 0.2s,
-    box-shadow 0.2s;
-    text-decoration: none;
-}
-.nav-btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(123, 171, 139, 0.35);
-}
+
 
 /* ── Hero ── */
 .hero {
@@ -288,6 +275,49 @@ nav {
 .stat-label {
   font-size: 0.85rem;
   opacity: 0.85;
+}
+/* SOURCES */
+.stat-source {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+
+  color: #3f5c4d;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+/* "Sources:" label */
+.stat-source span:first-child {
+  font-weight: 600;
+  color: #2e3f35;
+  margin-right: 6px;
+}
+
+/* dots */
+.stat-source .dot {
+  margin: 0 6px;
+  color: #8aa79a;
+}
+
+/* links */
+.stat-source a {
+  color: #4f7d66;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.stat-source a:hover {
+  text-decoration: underline;
+  color: #355e4b;
+}
+
+/* NOTE */
+.stat-note {
+  text-align: center;
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.55);
+  margin-top: 0.5rem;
 }
 
 /* ── Section base ── */
