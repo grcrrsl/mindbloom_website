@@ -111,6 +111,13 @@ nav {
 .nav-links a:hover {
   color: var(--sage);
 }
+/* ── Active Nav Link ── */
+.nav-links a.active {
+  background: var(--sage);
+  color: white !important;
+  padding: 0.65rem 1.2rem;
+  border-radius: 999px;
+}
 
 /* ── Hero ── */
 .hero {
@@ -165,16 +172,18 @@ nav {
   max-width: 720px;
 }
 .hero-badge {
-  display: inline-block;
-  background: var(--sage-pale);
-  color: var(--sage);
-  border: 1.5px solid var(--sage-light);
-  padding: 0.35rem 1rem;
-  border-radius: 50px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  margin-bottom: 1.5rem;
-  letter-spacing: 0.04em;
+  display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--sage-light);
+    color: #3d7a55;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
 }
 .hero h1 {
   font-family: "Fraunces", serif;
@@ -254,7 +263,7 @@ nav {
   position: relative;
   z-index: 1;
   background: var(--sage);
-  padding: 2rem 3rem;
+  padding: 1.5rem 3rem;
   display: flex;
   justify-content: center;
   gap: 4rem;
@@ -331,7 +340,7 @@ section {
 .section-tag {
   display: inline-block;
   font-size: 0.78rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   padding: 0.3rem 0.9rem;

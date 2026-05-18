@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MindBloom — Features &amp; Tools</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ── Floating background mascots ── -->
+    <div class="bg-deco tl">
+      <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="120" rx="70" ry="50" fill="#7BAB8B" />
+        <ellipse cx="60" cy="100" rx="40" ry="35" fill="#7BAB8B" />
+        <ellipse cx="145" cy="105" rx="38" ry="32" fill="#7BAB8B" />
+        <ellipse cx="100" cy="90" rx="50" ry="40" fill="#7BAB8B" />
+        <path d="M80 90 Q85 85 90 90" stroke="white" stroke-width="3" stroke-linecap="round" fill="none" />
+        <path d="M110 90 Q115 85 120 90" stroke="white" stroke-width="3" stroke-linecap="round" fill="none" />
+        <path d="M90 105 Q100 112 110 105" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none" />
+        <text x="148" y="72" fill="#7BAB8B" font-size="16" font-weight="bold" font-family="serif" opacity="0.6">z</text>
+        <text x="158" y="58" fill="#7BAB8B" font-size="20" font-weight="bold" font-family="serif" opacity="0.5">z</text>
+        <text x="170" y="42" fill="#7BAB8B" font-size="24" font-weight="bold" font-family="serif" opacity="0.4">z</text>
+      </svg>
+    </div>
+    <div class="bg-deco tr">
+      <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g transform="translate(90,90)">
+          <circle r="38" fill="#F5C842" />
+          <ellipse cx="0" cy="-52" rx="10" ry="18" fill="#F5C842" transform="rotate(0)" />
+          <ellipse cx="0" cy="-52" rx="10" ry="18" fill="#F5C842" transform="rotate(45)" />
+          <ellipse cx="0" cy="-52" rx="10" ry="18" fill="#F5C842" transform="rotate(90)" />
+          <ellipse cx="0" cy="-52" rx="10" ry="18" fill="#F5C842" transform="rotate(135)" />
+          <ellipse cx="0" cy="-52" rx="10" ry="18" fill="#F5C842" transform="rotate(180)" />
+          <ellipse cx="0" cy="-52" rx="10" ry="18" fill="#F5C842" transform="rotate(225)" />
+          <ellipse cx="0" cy="-52" rx="10" ry="18" fill="#F5C842" transform="rotate(270)" />
+          <ellipse cx="0" cy="-52" rx="10" ry="18" fill="#F5C842" transform="rotate(315)" />
+          <circle r="32" fill="#F5C842" />
+          <circle cx="-11" cy="-5" r="4" fill="#E8A820" />
+          <circle cx="11" cy="-5" r="4" fill="#E8A820" />
+          <path d="M-10 8 Q0 16 10 8" stroke="#E8A820" stroke-width="2.5" stroke-linecap="round" fill="none" />
+        </g>
+      </svg>
+    </div>
+    <div class="bg-deco bl">
+      <svg width="190" height="190" viewBox="0 0 190 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="80" y="120" width="30" height="45" rx="8" fill="#9B8EC4" />
+        <path d="M95 115 C95 80 55 60 55 90 C55 110 95 115 95 115 Z" fill="#7BAB8B" />
+        <path d="M95 115 C95 75 140 55 138 88 C136 108 95 115 95 115 Z" fill="#5D9075" />
+        <ellipse cx="95" cy="168" rx="28" ry="10" fill="#B09FD4" />
+        <path d="M85 45 C85 38 95 32 95 40 C95 32 105 38 105 45 C105 55 95 62 95 62 C95 62 85 55 85 45Z" fill="#F5A882" />
+        <circle cx="75" cy="90" r="3" fill="white" />
+        <circle cx="88" cy="84" r="3" fill="white" />
+      </svg>
+    </div>
+    <div class="bg-deco br">
+      <svg width="170" height="170" viewBox="0 0 170 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 130 Q85 20 150 130" stroke="#F5A882" stroke-width="12" fill="none" stroke-linecap="round" />
+        <path d="M30 130 Q85 38 140 130" stroke="#F5C842" stroke-width="12" fill="none" stroke-linecap="round" />
+        <path d="M40 130 Q85 56 130 130" stroke="#9B8EC4" stroke-width="12" fill="none" stroke-linecap="round" />
+        <path d="M50 130 Q85 70 120 130" stroke="#72B4D4" stroke-width="12" fill="none" stroke-linecap="round" />
+        <ellipse cx="25" cy="132" rx="18" ry="12" fill="white" opacity="0.9" />
+        <ellipse cx="145" cy="132" rx="18" ry="12" fill="white" opacity="0.9" />
+        <circle cx="85" cy="150" r="8" fill="#F5C842" />
+        <path d="M85 142 L87 148 L93 148 L88 152 L90 158 L85 154 L80 158 L82 152 L77 148 L83 148 Z" fill="white" opacity="0.6" />
+      </svg>
+    </div>
+    <div class="bg-deco mid-l">
+      <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+        <ellipse cx="40" cy="50" rx="28" ry="22" fill="#9B8EC4" transform="rotate(-20 40 50)" />
+        <ellipse cx="80" cy="50" rx="28" ry="22" fill="#B8AEDE" transform="rotate(20 80 50)" />
+        <ellipse cx="42" cy="75" rx="18" ry="14" fill="#7B6EC0" transform="rotate(10 42 75)" />
+        <ellipse cx="78" cy="75" rx="18" ry="14" fill="#9B8EC4" transform="rotate(-10 78 75)" />
+        <rect x="57" y="38" width="6" height="46" rx="3" fill="#5A4A80" />
+        <circle cx="57" cy="35" r="5" fill="#3D3060" />
+        <line x1="50" y1="32" x2="42" y2="22" stroke="#5A4A80" stroke-width="2" />
+        <line x1="64" y1="32" x2="72" y2="22" stroke="#5A4A80" stroke-width="2" />
+        <circle cx="42" cy="21" r="3" fill="#F5C842" />
+        <circle cx="72" cy="21" r="3" fill="#F5C842" />
+      </svg>
+    </div>
+    <div class="bg-deco mid-r">
+      <svg width="140" height="140" viewBox="0 0 140 140" fill="none">
+        <path d="M70 20 L74 40 L90 36 L76 48 L82 68 L70 56 L58 68 L64 48 L50 36 L66 40 Z" fill="#F5C842" />
+        <path d="M30 60 L32 70 L42 68 L34 76 L36 86 L30 78 L24 86 L26 76 L18 68 L28 70 Z" fill="#F5A882" opacity="0.7" />
+        <path d="M104 80 L106 88 L114 86 L108 92 L110 100 L104 94 L98 100 L100 92 L94 86 L102 88 Z" fill="#72B4D4" opacity="0.7" />
+        <circle cx="20" cy="110" r="6" fill="#9B8EC4" opacity="0.5" />
+        <circle cx="118" cy="40" r="5" fill="#7BAB8B" opacity="0.5" />
+      </svg>
+    </div>
+
+    <!-- ── Nav ── -->
+    <nav>
+      <div class="nav-logo">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <circle cx="14" cy="14" r="13" fill="#7BAB8B" />
+          <path d="M14 7 C14 7 9 11 9 16 C9 20 11 22 14 22 C17 22 19 20 19 16 C19 11 14 7 14 7Z" fill="white" opacity="0.9" />
+          <circle cx="14" cy="17" r="3" fill="#7BAB8B" />
+        </svg>
+        Mind<span>Bloom</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="features.html">Features</a>
+      </div>
+    </nav>
+
+    <!-- ── Coping Toolkit ── -->
+    <section id="cope" style="padding-top: 5rem">
+      <div class="reveal">
+        <div class="section-tag sage">Self-care toolkit</div>
+        <h2>Evidence-based coping strategies</h2>
+        <p class="section-intro">
+          These strategies are backed by research. None replace professional
+          help, but they can make a real difference in daily mental wellness.
+        </p>
+      </div>
+      <div class="toolkit-grid reveal">
+        <div class="tool-card a">
+          <span class="tool-emoji"><i class="fa-solid fa-spa"></i></span>
+          <h3>Mindfulness</h3>
+          <p>Paying attention to the present moment without judgment. Just 10 minutes daily can reduce stress and anxiety significantly.</p>
+        </div>
+        <div class="tool-card b">
+          <span class="tool-emoji"><i class="fa-solid fa-person-running"></i></span>
+          <h3>Physical movement</h3>
+          <p>Exercise releases endorphins, reduces cortisol, and improves sleep. Even a 20-minute walk has measurable mood benefits.</p>
+        </div>
+        <div class="tool-card c">
+          <span class="tool-emoji"><i class="fa-solid fa-book"></i></span>
+          <h3>Journaling</h3>
+          <p>Writing about thoughts and feelings helps process emotions, gain perspective, and track patterns in your mental health.</p>
+        </div>
+        <div class="tool-card d">
+          <span class="tool-emoji"><i class="fa-solid fa-moon"></i></span>
+          <h3>Sleep hygiene</h3>
+          <p>Sleep and mental health are deeply linked. Consistent sleep schedules and wind-down routines can transform how you feel.</p>
+        </div>
+        <div class="tool-card e">
+          <span class="tool-emoji"><i class="fa-solid fa-hand-holding-heart"></i></span>
+          <h3>Social connection</h3>
+          <p>Humans are wired for connection. Spending time with supportive people — even briefly — is a powerful buffer against mental illness.</p>
+        </div>
+        <div class="tool-card f">
+          <span class="tool-emoji"><i class="fa-solid fa-wind"></i></span>
+          <h3>Breathing exercises</h3>
+          <p>Deep breathing activates the parasympathetic nervous system. Try 4-7-8 breathing: inhale 4s, hold 7s, exhale 8s.</p>
+        </div>
+        <div class="tool-card g">
+          <span class="tool-emoji"><i class="fa-solid fa-palette"></i></span>
+          <h3>Creative expression</h3>
+          <p>Engaging in creative activities like art, music, or writing can be a powerful way to process emotions and express yourself.</p>
+        </div>
+        <div class="tool-card h">
+          <span class="tool-emoji"><i class="fa-solid fa-leaf"></i></span>
+          <h3>Nature exposure</h3>
+          <p>Spending time in nature has been shown to reduce stress, improve mood, and enhance overall well-being.</p>
+        </div>
+        <div class="tool-card i">
+          <span class="tool-emoji"><i class="fa-solid fa-puzzle-piece"></i></span>
+          <h3>Problem-solving</h3>
+          <p>Breaking down large problems into smaller, manageable steps can reduce feelings of overwhelm and increase a sense of control.</p>
+        </div>
+        <div class="tool-card j">
+          <span class="tool-emoji"><i class="fa-solid fa-phone"></i></span>
+          <h3>Professional support</h3>
+          <p>Seeking help from a mental health professional is a sign of strength, not weakness. Therapy and counseling can provide valuable tools and insights for managing mental health challenges.</p>
+        </div>
+        <div class="tool-card k">
+          <span class="tool-emoji"><i class="fa-solid fa-pills"></i></span>
+          <h3>Medication</h3>
+          <p>When properly prescribed and monitored, psychiatric medication can be an effective treatment for many mental health conditions, helping to restore balance and improve quality of life.</p>
+        </div>
+        <div class="tool-card l">
+          <span class="tool-emoji"><i class="fa-solid fa-people-group"></i></span>
+          <h3>Social support</h3>
+          <p>Having a strong support network can make a significant difference in managing mental health challenges. Don't hesitate to reach out to friends, family, or support groups.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Self-Assessment Quiz ── -->
+    <section id="quiz">
+      <div class="reveal">
+        <div class="section-tag sky">Self-Check</div>
+        <h2>How are you <em>feeling?</em></h2>
+        <p class="section-intro">
+          These short check-ins are not diagnostic tools — but they can help you
+          recognise patterns and decide whether to seek support. Always consult a
+          professional for a proper assessment.
+        </p>
+      </div>
+
+      <div class="quiz-cards reveal">
+
+        <!-- Mood Check -->
+        <div class="quiz-card" id="moodQuiz">
+          <div class="quiz-card-header" style="background: linear-gradient(135deg, var(--sage-pale), var(--sky-pale))">
+            <i class="fa-solid fa-face-smile quiz-icon" style="color: var(--sage)"></i>
+            <h3>Daily Mood Check-In</h3>
+            <p>A quick 5-question pulse check on how you're doing today.</p>
+          </div>
+          <div class="quiz-body">
+            <div class="quiz-step active" data-step="1">
+              <p class="quiz-q">Over the last 2 weeks, how often have you felt little interest or pleasure in doing things?</p>
+              <div class="quiz-options">
+                <button class="quiz-opt" data-val="0">Not at all</button>
+                <button class="quiz-opt" data-val="1">Several days</button>
+                <button class="quiz-opt" data-val="2">More than half the days</button>
+                <button class="quiz-opt" data-val="3">Nearly every day</button>
+              </div>
+            </div>
+            <div class="quiz-step" data-step="2">
+              <p class="quiz-q">How often have you felt down, depressed, or hopeless?</p>
+              <div class="quiz-options">
+                <button class="quiz-opt" data-val="0">Not at all</button>
+                <button class="quiz-opt" data-val="1">Several days</button>
+                <button class="quiz-opt" data-val="2">More than half the days</button>
+                <button class="quiz-opt" data-val="3">Nearly every day</button>
+              </div>
+            </div>
+            <div class="quiz-step" data-step="3">
+              <p class="quiz-q">How often have you had trouble falling or staying asleep?</p>
+              <div class="quiz-options">
+                <button class="quiz-opt" data-val="0">Not at all</button>
+                <button class="quiz-opt" data-val="1">Several days</button>
+                <button class="quiz-opt" data-val="2">More than half the days</button>
+                <button class="quiz-opt" data-val="3">Nearly every day</button>
+              </div>
+            </div>
+            <div class="quiz-step" data-step="4">
+              <p class="quiz-q">How often have you felt tired or had little energy?</p>
+              <div class="quiz-options">
+                <button class="quiz-opt" data-val="0">Not at all</button>
+                <button class="quiz-opt" data-val="1">Several days</button>
+                <button class="quiz-opt" data-val="2">More than half the days</button>
+                <button class="quiz-opt" data-val="3">Nearly every day</button>
+              </div>
+            </div>
+            <div class="quiz-step" data-step="5">
+              <p class="quiz-q">How often have you felt nervous, anxious, or on edge?</p>
+              <div class="quiz-options">
+                <button class="quiz-opt" data-val="0">Not at all</button>
+                <button class="quiz-opt" data-val="1">Several days</button>
+                <button class="quiz-opt" data-val="2">More than half the days</button>
+                <button class="quiz-opt" data-val="3">Nearly every day</button>
+              </div>
+            </div>
+            <div class="quiz-result" style="display:none">
+              <div class="quiz-result-icon"></div>
+              <p class="quiz-score"></p>
+              <p class="quiz-result-text"></p>
+              <p class="quiz-disclaimer">This is a self-check only — not a clinical diagnosis. If you're concerned, please speak with a mental health professional.</p>
+              <button class="quiz-restart btn-outline">Take Again</button>
+            </div>
+            <div class="quiz-progress">
+              <div class="quiz-progress-bar"><div class="quiz-progress-fill" style="width: 20%"></div></div>
+              <span class="quiz-progress-label">Question 1 of 5</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stress Check -->
+        <div class="quiz-card" id="stressQuiz">
+          <div class="quiz-card-header" style="background: linear-gradient(135deg, var(--peach-pale), #fef9e7)">
+            <i class="fa-solid fa-bolt quiz-icon" style="color: var(--peach)"></i>
+            <h3>Stress Level Check</h3>
+            <p>Identify your current stress load and get tailored coping suggestions.</p>
+          </div>
+          <div class="quiz-body">
+            <div class="quiz-step active" data-step="1">
+              <p class="quiz-q">In the last month, how often have you felt unable to control the important things in your life?</p>
+              <div class="quiz-options">
+                <button class="quiz-opt" data-val="0">Never</button>
+                <button class="quiz-opt" data-val="1">Almost never</button>
+                <button class="quiz-opt" data-val="2">Sometimes</button>
+                <button class="quiz-opt" data-val="3">Fairly often</button>
+                <button class="quiz-opt" data-val="4">Very often</button>
+              </div>
+            </div>
+            <div class="quiz-step" data-step="2">
+              <p class="quiz-q">How often have you felt difficulties were piling up so high that you could not overcome them?</p>
+              <div class="quiz-options">
+                <button class="quiz-opt" data-val="0">Never</button>
+                <button class="quiz-opt" data-val="1">Almost never</button>
+                <button class="quiz-opt" data-val="2">Sometimes</button>
+                <button class="quiz-opt" data-val="3">Fairly often</button>
+                <button class="quiz-opt" data-val="4">Very often</button>
+              </div>
+            </div>
+            <div class="quiz-step" data-step="3">
+              <p class="quiz-q">How often have you felt confident about your ability to handle personal problems?</p>
+              <div class="quiz-options">
+                <button class="quiz-opt" data-val="4">Never</button>
+                <button class="quiz-opt" data-val="3">Almost never</button>
+                <button class="quiz-opt" data-val="2">Sometimes</button>
+                <button class="quiz-opt" data-val="1">Fairly often</button>
+                <button class="quiz-opt" data-val="0">Very often</button>
+              </div>
+            </div>
+            <div class="quiz-step" data-step="4">
+              <p class="quiz-q">How often have you been upset because of something that happened unexpectedly?</p>
+              <div class="quiz-options">
+                <button class="quiz-opt" data-val="0">Never</button>
+                <button class="quiz-opt" data-val="1">Almost never</button>
+                <button class="quiz-opt" data-val="2">Sometimes</button>
+                <button class="quiz-opt" data-val="3">Fairly often</button>
+                <button class="quiz-opt" data-val="4">Very often</button>
+              </div>
+            </div>
+            <div class="quiz-result" style="display:none">
+              <div class="quiz-result-icon"></div>
+              <p class="quiz-score"></p>
+              <p class="quiz-result-text"></p>
+              <p class="quiz-disclaimer">This is a self-check only — not a clinical diagnosis. If you're concerned, please speak with a mental health professional.</p>
+              <button class="quiz-restart btn-outline">Take Again</button>
+            </div>
+            <div class="quiz-progress">
+              <div class="quiz-progress-bar"><div class="quiz-progress-fill" style="width: 25%"></div></div>
+              <span class="quiz-progress-label">Question 1 of 4</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Wellness Tracker -->
+      <div class="wellness-tracker reveal">
+        <h3><i class="fa-solid fa-chart-line"></i> Daily Wellness Dimensions</h3>
+        <p>Mental health spans multiple life areas. Rate how each dimension is going for you <em>today</em>.</p>
+        <div class="wellness-bars">
+          <div class="wellness-bar-row">
+            <span class="wellness-label"><i class="fa-solid fa-bed"></i> Sleep</span>
+            <div class="wellness-track">
+              <div class="wellness-dots">
+                <button class="wdot" data-dim="sleep" data-val="1" title="Poor"></button>
+                <button class="wdot" data-dim="sleep" data-val="2"></button>
+                <button class="wdot" data-dim="sleep" data-val="3" title="Okay"></button>
+                <button class="wdot" data-dim="sleep" data-val="4"></button>
+                <button class="wdot" data-dim="sleep" data-val="5" title="Great"></button>
+              </div>
+              <span class="wellness-score" id="sleep-score">–</span>
+            </div>
+          </div>
+          <div class="wellness-bar-row">
+            <span class="wellness-label"><i class="fa-solid fa-person-running"></i> Movement</span>
+            <div class="wellness-track">
+              <div class="wellness-dots">
+                <button class="wdot" data-dim="move" data-val="1"></button>
+                <button class="wdot" data-dim="move" data-val="2"></button>
+                <button class="wdot" data-dim="move" data-val="3"></button>
+                <button class="wdot" data-dim="move" data-val="4"></button>
+                <button class="wdot" data-dim="move" data-val="5"></button>
+              </div>
+              <span class="wellness-score" id="move-score">–</span>
+            </div>
+          </div>
+          <div class="wellness-bar-row">
+            <span class="wellness-label"><i class="fa-solid fa-users"></i> Connection</span>
+            <div class="wellness-track">
+              <div class="wellness-dots">
+                <button class="wdot" data-dim="conn" data-val="1"></button>
+                <button class="wdot" data-dim="conn" data-val="2"></button>
+                <button class="wdot" data-dim="conn" data-val="3"></button>
+                <button class="wdot" data-dim="conn" data-val="4"></button>
+                <button class="wdot" data-dim="conn" data-val="5"></button>
+              </div>
+              <span class="wellness-score" id="conn-score">–</span>
+            </div>
+          </div>
+          <div class="wellness-bar-row">
+            <span class="wellness-label"><i class="fa-solid fa-spa"></i> Calm</span>
+            <div class="wellness-track">
+              <div class="wellness-dots">
+                <button class="wdot" data-dim="calm" data-val="1"></button>
+                <button class="wdot" data-dim="calm" data-val="2"></button>
+                <button class="wdot" data-dim="calm" data-val="3"></button>
+                <button class="wdot" data-dim="calm" data-val="4"></button>
+                <button class="wdot" data-dim="calm" data-val="5"></button>
+              </div>
+              <span class="wellness-score" id="calm-score">–</span>
+            </div>
+          </div>
+          <div class="wellness-bar-row">
+            <span class="wellness-label"><i class="fa-solid fa-lightbulb"></i> Purpose</span>
+            <div class="wellness-track">
+              <div class="wellness-dots">
+                <button class="wdot" data-dim="purp" data-val="1"></button>
+                <button class="wdot" data-dim="purp" data-val="2"></button>
+                <button class="wdot" data-dim="purp" data-val="3"></button>
+                <button class="wdot" data-dim="purp" data-val="4"></button>
+                <button class="wdot" data-dim="purp" data-val="5"></button>
+              </div>
+              <span class="wellness-score" id="purp-score">–</span>
+            </div>
+          </div>
+        </div>
+        <div class="wellness-feedback" id="wellnessFeedback" style="display:none">
+          <i class="fa-solid fa-seedling"></i>
+          <p id="wellnessFeedbackText"></p>
+          <div class="feedback-content">
+            <button class="wellness-reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ── -->
+    <section id="faq">
+      <div class="faq-section reveal">
+        <div class="section-tag sky">Common Questions</div>
+        <h2>Frequently Asked <em>Questions</em></h2>
+        <p class="section-intro" style="margin-bottom: 2.5rem">
+          Honest answers to the questions people are often too afraid to ask out loud.
+        </p>
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What's the difference between a psychiatrist, psychologist, and therapist?</span>
+              <i class="fa-solid fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              <p>A <strong>psychiatrist</strong> is a medical doctor who can diagnose mental health conditions and prescribe medication. A <strong>psychologist</strong> holds a doctoral degree in psychology and provides assessment and therapy but typically cannot prescribe medication (with some exceptions). A <strong>therapist</strong> or <strong>counsellor</strong> is a broader term covering licensed professionals (LCSWs, LMFTs, LPCs) who provide talk therapy. Many people work with both a psychiatrist for medication management and a therapist for ongoing support.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How do I know if I need therapy or just need to talk to a friend?</span>
+              <i class="fa-solid fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Friends are invaluable for support, but therapy offers something different: a trained professional who provides a confidential, non-judgmental space and evidence-based techniques. Consider therapy if your distress is persistent (lasting weeks), interfering with daily life, work, or relationships, or if you feel your friends are burdened. You don't need to be in crisis to benefit from therapy — many people use it for personal growth and self-understanding.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is medication for mental health safe? Will it change my personality?</span>
+              <i class="fa-solid fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              <p>When properly prescribed and monitored, psychiatric medication is safe and effective. The goal of medication is not to change who you are — it's to reduce symptoms so you can function and feel more like yourself. All medications have potential side effects, which is why regular check-ins with your prescribing doctor are essential. Many people find that medication, combined with therapy, gives the best outcomes.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can children and teenagers have mental health conditions?</span>
+              <i class="fa-solid fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. Half of all mental health conditions begin by age 14, and 75% by age 24. Children can experience anxiety, depression, ADHD, OCD, and other conditions. Early identification and intervention significantly improve long-term outcomes. If you're concerned about a young person, speak with a paediatrician or child psychologist. Normalising mental health conversations at home builds resilience from an early age.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What should I do if someone tells me they're thinking about suicide?</span>
+              <i class="fa-solid fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Take it seriously. Stay calm and listen without judgment. Ask them directly — "Are you thinking about suicide?" Research shows that asking does not plant the idea. Remove access to means if possible. Don't leave them alone. Help them contact a crisis line (e.g., Hopeline PH: 0917-558-4673) or take them to an emergency room if there is immediate danger. Follow up afterwards — continued connection matters enormously.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How long does therapy take before I see results?</span>
+              <i class="fa-solid fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              <p>It varies. Some people notice shifts within 4–8 sessions of Cognitive Behavioural Therapy (CBT). Others benefit from longer-term work over months or years, particularly for complex trauma or personality-related concerns. The therapeutic relationship itself is one of the strongest predictors of outcome — it's worth trying a few therapists if the first doesn't feel right. Progress isn't always linear, and some sessions feel harder than others.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I improve my mental health without professional help?</span>
+              <i class="fa-solid fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes — for mild to moderate difficulties, evidence-based self-care strategies make a real difference: regular exercise, quality sleep, social connection, mindfulness, and journaling all have strong research backing. Apps like Woebot, MoodTools, and Headspace can supplement this. However, for moderate to severe symptoms, or if self-care alone isn't enough, professional support is strongly recommended. Self-help and professional care work best together.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is it normal to feel worse before feeling better in therapy?</span>
+              <i class="fa-solid fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Very common, and often a sign that meaningful work is happening. Processing difficult emotions, memories, or patterns can temporarily increase discomfort before it decreases. This is especially true in trauma-focused therapies. A good therapist will pace this with you and help you build emotional regulation skills alongside the deeper work. Communicate openly with your therapist about how you're feeling between and during sessions.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Professional Directory ── -->
+    <section id="professionals">
+      <div class="reveal">
+        <div class="section-tag sage">Find Support</div>
+        <h2>Types of Mental Health <em>Professionals</em></h2>
+        <p class="section-intro">
+          Understanding who does what helps you find the right person for your
+          specific needs — so you can get effective help faster.
+        </p>
+      </div>
+
+      <div class="professionals-grid reveal">
+        <div class="pro-card">
+          <div class="pro-icon" style="background: var(--sage-pale)"><i class="fa-solid fa-user-doctor" style="color: var(--sage)"></i></div>
+          <h4>Psychiatrist</h4>
+          <p class="pro-degree">MD / DO</p>
+          <p>Medical doctor specialising in mental health. Can diagnose conditions, prescribe and manage psychiatric medications, and provide therapy.</p>
+          <div class="pro-good-for"><strong>Good for:</strong> Medication management, complex diagnoses, severe conditions</div>
+        </div>
+
+        <div class="pro-card">
+          <div class="pro-icon" style="background: var(--lavender-pale)"><i class="fa-solid fa-brain" style="color: var(--lavender)"></i></div>
+          <h4>Psychologist</h4>
+          <p class="pro-degree">PhD / PsyD / EdD</p>
+          <p>Doctoral-level clinician providing assessment, diagnosis, and evidence-based psychotherapy. Specialises in psychological testing and evaluation.</p>
+          <div class="pro-good-for"><strong>Good for:</strong> Assessment, CBT, trauma therapy, diagnostic clarity</div>
+        </div>
+
+        <div class="pro-card">
+          <div class="pro-icon" style="background: var(--sky-pale)"><i class="fa-solid fa-comments" style="color: var(--sky)"></i></div>
+          <h4>Licensed Therapist</h4>
+          <p class="pro-degree">LCSW / LMFT / LPC</p>
+          <p>Master's-level clinician providing individual, couples, family, or group therapy. Wide range of specialisations available.</p>
+          <div class="pro-good-for"><strong>Good for:</strong> Talk therapy, relationship issues, life transitions, everyday mental health</div>
+        </div>
+
+        <div class="pro-card">
+          <div class="pro-icon" style="background: var(--peach-pale)"><i class="fa-solid fa-hand-holding-heart" style="color: var(--peach)"></i></div>
+          <h4>Counsellor</h4>
+          <p class="pro-degree">MA / MS / MEd</p>
+          <p>Provides guidance and support for specific challenges such as grief, addiction, career, or school-related difficulties.</p>
+          <div class="pro-good-for"><strong>Good for:</strong> Grief, substance use, school issues, career stress</div>
+        </div>
+
+        <div class="pro-card">
+          <div class="pro-icon" style="background: #fef9e7"><i class="fa-solid fa-people-group" style="color: #c89040"></i></div>
+          <h4>Social Worker</h4>
+          <p class="pro-degree">MSW / LCSW</p>
+          <p>Connects individuals and families with community resources, services, and support systems in addition to providing therapy.</p>
+          <div class="pro-good-for"><strong>Good for:</strong> Navigating systems, family support, crisis intervention</div>
+        </div>
+
+        <div class="pro-card">
+          <div class="pro-icon" style="background: var(--lavender-pale)"><i class="fa-solid fa-spa" style="color: var(--lavender)"></i></div>
+          <h4>Peer Support Specialist</h4>
+          <p class="pro-degree">Certified Peer Support</p>
+          <p>A trained professional with lived experience of mental health challenges who provides support, connection, and hope to others on their journey.</p>
+          <div class="pro-good-for"><strong>Good for:</strong> Lived-experience support, reducing isolation, recovery communities</div>
+        </div>
+      </div>
+
+      <!-- Therapy types -->
+      <div class="therapy-types reveal">
+        <h3 class="reading-heading"><i class="fa-solid fa-list-check"></i> Common Therapy Approaches</h3>
+        <div class="therapy-grid">
+          <div class="therapy-item">
+            <span class="therapy-abbr" style="background: var(--sage-pale); color: var(--sage)">CBT</span>
+            <div>
+              <strong>Cognitive Behavioural Therapy</strong>
+              <p>Identifies and reshapes unhelpful thought patterns and behaviours. The most evidence-based therapy for anxiety and depression.</p>
+            </div>
+          </div>
+          <div class="therapy-item">
+            <span class="therapy-abbr" style="background: var(--peach-pale); color: #c07050">EMDR</span>
+            <div>
+              <strong>Eye Movement Desensitisation &amp; Reprocessing</strong>
+              <p>Uses bilateral stimulation to help process and integrate traumatic memories. Highly effective for PTSD.</p>
+            </div>
+          </div>
+          <div class="therapy-item">
+            <span class="therapy-abbr" style="background: var(--lavender-pale); color: var(--lavender)">DBT</span>
+            <div>
+              <strong>Dialectical Behaviour Therapy</strong>
+              <p>Teaches emotional regulation, distress tolerance, mindfulness, and interpersonal effectiveness. Originally developed for BPD.</p>
+            </div>
+          </div>
+          <div class="therapy-item">
+            <span class="therapy-abbr" style="background: var(--sky-pale); color: var(--sky)">ACT</span>
+            <div>
+              <strong>Acceptance &amp; Commitment Therapy</strong>
+              <p>Focuses on accepting difficult thoughts and feelings rather than fighting them, while committing to value-driven action.</p>
+            </div>
+          </div>
+          <div class="therapy-item">
+            <span class="therapy-abbr" style="background: #fef9e7; color: #c89040">IFS</span>
+            <div>
+              <strong>Internal Family Systems</strong>
+              <p>Explores the different "parts" of yourself — including wounded inner children and protective parts — to foster self-leadership.</p>
+            </div>
+          </div>
+          <div class="therapy-item">
+            <span class="therapy-abbr" style="background: var(--sage-pale); color: var(--sage)">MBT</span>
+            <div>
+              <strong>Mindfulness-Based Therapy</strong>
+              <p>Integrates mindfulness meditation with cognitive therapy to break cycles of rumination and prevent depression relapse.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button id="scrollTopBtn"><i class="fa-solid fa-chevron-up"></i></button>
+
+    <!-- ── Footer ── -->
+    <footer>
+      <div class="footer-logo"><i class="fa-solid fa-seedling"></i> MindBloom</div>
+      <p>Mental health education for everyone, everywhere.</p>
+      <p class="disclaimer">
+        MindBloom is for educational purposes only and does not constitute
+        medical advice. If you are experiencing a mental health crisis, please
+        contact a qualified professional or call a crisis helpline immediately.
+        The information provided here is general in nature and should not
+        replace personalized care from a licensed mental health provider.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html> 

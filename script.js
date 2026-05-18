@@ -13,7 +13,7 @@ const io = new IntersectionObserver(
 reveals.forEach((el) => io.observe(el));
 
 // immediately show hero
-document.querySelector(".hero .reveal").classList.add("visible");
+document.querySelector(".hero .reveal")?.classList.add("visible");
 const scrollBtn = document.getElementById("scrollTopBtn");
 
 window.addEventListener("scroll", () => {
@@ -617,4 +617,18 @@ document.querySelectorAll(".faq-question").forEach((btn) => {
     }
   });
 });
-  
+// ───────────────── Active Nav Link ─────────────────
+const navLinks = document.querySelectorAll(".nav-links a");
+
+navLinks.forEach((link) => {
+  // highlight current page
+  if (window.location.href.includes(link.getAttribute("href"))) {
+    link.classList.add("active");
+  }
+
+  // click animation
+  link.addEventListener("click", () => {
+    navLinks.forEach((l) => l.classList.remove("active"));
+    link.classList.add("active");
+  });
+});
