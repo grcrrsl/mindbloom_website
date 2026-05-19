@@ -632,3 +632,15 @@ navLinks.forEach((link) => {
     link.classList.add("active");
   });
 });
+// NEWSLETTER
+const newsletterForm = document.querySelector(".newsletter-form");
+
+newsletterForm?.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const email = document.querySelector(".newsletter-input").value;
+
+  console.log("Future signup:", email);
+
+  alert("Thanks! Newsletter subscriptions will open soon.");
+});
