@@ -2116,6 +2116,28 @@ footer p {
   line-height: 1.6;
   opacity: 0.8;
 }
+/* Footer Nav Links */
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--sage);
+
+}
 
 /* ── Smooth reveal ── */
 .reveal {
