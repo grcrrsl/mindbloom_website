@@ -1815,19 +1815,24 @@ h2 em {
   gap: 1.4rem;
   margin-bottom: 3rem;
 }
+
 .pro-card {
   background: var(--white);
   border: 1.5px solid #e8e3dc;
   border-radius: 20px;
   padding: 1.8rem;
-  transition:
-    transform 0.25s,
-    box-shadow 0.25s;
+
+  display: flex;
+  flex-direction: column; /* IMPORTANT */
+
+  transition: transform 0.25s, box-shadow 0.25s;
 }
+
 .pro-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 14px 30px rgba(44, 40, 40, 0.08);
 }
+
 .pro-icon {
   width: 50px;
   height: 50px;
@@ -1839,9 +1844,11 @@ h2 em {
   margin-bottom: 1rem;
   transition: transform 0.2s;
 }
+
 .pro-card:hover .pro-icon {
   transform: scale(1.1);
 }
+
 .pro-card h4 {
   font-family: "Fraunces", serif;
   font-size: 1.05rem;
@@ -1849,6 +1856,7 @@ h2 em {
   color: var(--text);
   margin-bottom: 0.15rem;
 }
+
 .pro-degree {
   font-size: 0.72rem;
   font-weight: 600;
@@ -1857,12 +1865,14 @@ h2 em {
   color: var(--sage);
   margin-bottom: 0.7rem !important;
 }
+
 .pro-card p {
   font-size: 0.85rem;
   color: var(--text-mid);
   line-height: 1.65;
   margin-bottom: 1rem;
 }
+
 .pro-good-for {
   font-size: 0.78rem;
   color: var(--text-mid);
@@ -1870,7 +1880,10 @@ h2 em {
   padding: 0.5rem 0.8rem;
   border-radius: 10px;
   line-height: 1.55;
+
+  margin-top: auto; /* MAGIC FIX */
 }
+
 .pro-good-for strong {
   color: var(--sage);
 }
