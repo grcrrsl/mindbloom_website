@@ -69,6 +69,7 @@ This project supports **SDG 3: Good Health and Well-Being** by promoting mental 
 🔗 https://mindbloom-website-neon.vercel.app/
 
 👥 Developers
+
 Agustino, Josiah Caleb S.
 
 Garcera, Roselle A.
