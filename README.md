@@ -56,6 +56,7 @@ CSS – Styling, layout, and visual design
 JavaScript – Interactive features and dynamic content
 Visual Studio Code – Development environment
 GitHub – Repository and version control
+Vercel – Website deployment and hosting platform
 
 🌍 SDG Alignment
 
@@ -64,11 +65,14 @@ This project supports **SDG 3: Good Health and Well-Being** by promoting mental 
 🚀 Live Website
 
 🔗 https://grcrrsl.github.io/mindbloom_website/
+
 🔗 https://mindbloom-website-neon.vercel.app/
 
 👥 Developers
 Agustino, Josiah Caleb S.
+
 Garcera, Roselle A.
+
 Ingalla, Mico C.
 
 -------------------------------------------------
