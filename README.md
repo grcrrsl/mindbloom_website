@@ -76,6 +76,6 @@ Garcera, Roselle A.
 
 Ingalla, Mico C.
 
--------------------------------------------------
+------------------------------------------------
 
 Mind Bloom — Your mind deserves to bloom. 🌱
